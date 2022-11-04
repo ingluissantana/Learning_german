@@ -45,6 +45,8 @@ prep = st.select_slider(
      'Preposition:',
      options=preposition)
 
+st.text('Shows the preposition before and after one word.')
+
 #check for word in bigrams
 after = []
 for i in bi_data:
@@ -68,6 +70,7 @@ st.dataframe(data=before, width=None, height=None)
 
 #Word behaviour
 word_enter = st.text_input('Enter a word:')
+st.text('Shows the word in the first, second and third position on a sentence of 3 words.')
 
 #check for word in trigrams
 words13 = []
